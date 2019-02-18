@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="onBindClick"
+            type="android.view.View.OnClickListener"/>
+        <variable
+            name="value"
+            type="String"/>
+        <variable
+            name="checked"
+            type="boolean"/>
+    </data>
+
+    <RadioButton
+        android:id="@+id/itemSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="@{checked}"
+        android:onClick="@{onBindClick}"
+        android:text="@{value}"
+        android:textSize="@dimen/text_indicator" />
+</layout>

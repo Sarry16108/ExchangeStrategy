@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="app_gray_pressed">#ffF2F2F2</color>
+    <color name="app_main">#3c3b3b</color>          <!-- 主色-->
+
+    <color name="gray_translucent">#CF0f0e0d</color>
+    <color name="app_transparent">@android:color/transparent</color>
+    <color name="app_text_gray">#686866</color>     <!-- 字体深灰-->
+    <color name="app_text_light_gray">#bfbfbf</color>  <!-- 字体灰-->
+    <color name="app_text_black">#252525</color>
+
+    <color name="app_yellow">#efc608</color>        <!-- 黄色-->
+    <color name="app_blue">#0dc0f4</color>          <!-- 蓝色-->
+    <color name="app_black">#10100f</color>         <!-- 黑色-->
+    <color name="app_white">#ffffff</color>         <!-- 白色-->
+    <color name="app_oriange">#f1570b</color>       <!-- 橙色-->
+    <color name="app_red">#ff0000</color>
+    <color name="app_green">#00ff00</color>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="com.example.finance.tradestrategy.databindings.DatabindingUtls"/>
+        <variable
+            name="symbol"
+            type="String"/>
+        <variable
+            name="onBindClick"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@{symbol}"
+                tools:text="啊啊啊"
+                android:onClick="@{onBindClick}"/>
+
+            <TextView
+                android:id="@+id/strategyType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                tools:text="策略"
+                android:onClick="@{onBindClick}"/>
+
+            <TextView
+                android:id="@+id/period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                tools:text="周期 "
+                android:onClick="@{onBindClick}"/>
+        </LinearLayout>
+
+        <com.example.finance.tradestrategy.indicators.view.InteractiveKLineView
+            android:id="@+id/kLineView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:yLabelAlign="right"
+            app:xMarkerAlign="bottom"
+            app:yMarkerAlign="left"
+            app:decreasingStyle="stroke"/>
+
+    </LinearLayout>
+
+</layout>

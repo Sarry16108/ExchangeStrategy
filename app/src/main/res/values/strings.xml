@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">策略</string>
+    <string name="peopleTotalCount">购买总人数：</string>
+    <string name="peopleCountBull">看涨：</string>
+    <string name="peopleCountBear"> 看跌：</string>
+    <string name="buyCtBull">看涨：</string>
+    <string name="buyCtBear"> 空：</string>
+    <string name="updateTimes">刷新次数:</string>
+</resources>

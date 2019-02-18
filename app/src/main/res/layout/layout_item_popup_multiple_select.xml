@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="onBindClick"
+            type="android.view.View.OnClickListener"/>
+        <variable
+            name="value"
+            type="String"/>
+        <variable
+            name="checked"
+            type="boolean"/>
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp">
+        <CheckBox
+            android:id="@+id/itemSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{value}"
+            android:checked="@{checked}"
+            android:onClick="@{onBindClick}"
+            android:textSize="@dimen/text_indicator"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="com.example.finance.tradestrategy.databindings.BindingAdapterUtils"/>
+        <import type="com.example.finance.tradestrategy.databindings.DatabindingUtls"/>
+
+        <variable
+            name="stockStrategy"
+            type="com.example.finance.tradestrategy.entity.StockStrategy"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/TagWrap"
+                android:text="@{stockStrategy.nameCN}"
+                tools:text="王小二王小二王小二王小二王小二王小二王小二王小二王小二"
+                android:gravity="left"
+                android:lines="1"
+                android:ellipsize="end"/>
+            <TextView
+                style="@style/TagWrap"
+                android:text="@{DatabindingUtls.stratogySymbol(stockStrategy.symbol)}"
+                tools:text="王小二"
+                android:gravity="left"
+                android:layout_marginTop="3dp"/>
+        </LinearLayout>
+
+        <View
+            style="@style/line_vertical"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp" />
+
+        <TextView
+            style="@style/TagWrap"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text='@{DatabindingUtls.getClosePrice(stockStrategy.close)}'
+            android:textColor="@android:color/holo_red_dark"
+            tools:text="朋友：1234"/>
+
+    </LinearLayout>
+</layout>

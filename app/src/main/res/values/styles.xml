@@ -1,0 +1,78 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="ActTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+    <style name="TextNormalBlackCenter">
+        <item name="android:textSize">@dimen/text_indicator</item>
+        <item name="android:textColor">@color/app_text_gray</item>
+    </style>
+
+    <!-- 一级主题-->
+    <!-- 二级标题-->
+
+    <!-- 三级标题-->
+    <style name="TagWrap">
+        <item name="android:textSize">@dimen/text_indicator</item>
+        <item name="android:textColor">@color/app_text_black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 三级副标题-->
+    <style name="SubTagWrap">
+        <item name="android:textSize">@dimen/text_sub_indicator</item>
+        <item name="android:textColor">@color/app_text_light_gray</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 四级正文 -->
+    <style name="MainBodyWrap">
+        <item name="android:textSize">@dimen/text_main_body</item>
+        <item name="android:textColor">@color/app_text_gray</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="line_horizontal">
+        <item name="android:background">#dcdcdc</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+
+    <style name="line_vertical">
+        <item name="android:background">#dcdcdc</item>
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="theme_dialog" parent="android:Theme.Dialog">
+        <!--背景透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="imgInterest">
+        <item name="android:layout_width">16dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_gravity">left|bottom</item>
+        <item name="android:src">@mipmap/iv_interest</item>
+    </style>
+    <style name="imgPotrait">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+</resources>
